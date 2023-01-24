@@ -23,6 +23,8 @@ class Input(ABC):
     def read(self):
         pass
 ```
+<hr>
+
 ###### In the instance the user enters an invalid row or column value, they would receive the following result and be asked to enter a valid value again
 
 ![invalid row/col value](./invalid_row_col.png)
