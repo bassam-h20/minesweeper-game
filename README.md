@@ -10,7 +10,7 @@
 2. 8x8
 3. 10x10
 * The user then enters the number of the row, then column, then 'F' or 'O' to either flag or open the cell as shown in the screenshot below
-* Per Minesweeper rules, the cell selected by the user will display the amount of mines in a 1-cell proximity around it (in this case 1).
+* Per Minesweeper rules, the cell selected by the user will display the amount of mines in a 1-cell proximity around it in all directions (in this case 1).
 
 ![first_prompt](./user_prompt.png)
 <hr>
@@ -40,10 +40,10 @@ class Input(ABC):
 ![flag](./flag.png)
 <hr>
 
-###### In the instance where the user lost by landing on a mine, in the following two pictures, one will display the board printing all mines present on the board and the other picture showing a 'play again' prompt being used to play again
+###### In the instance where the user lost by landing on a mine, in the following two pictures, one will display the board printing all mines present on the board as the '*' and the other picture showing a 'play again' prompt being used to play again
 
-[!game loss](./game_loss.png)
-[!play again](./play_again.png)
+![game loss](./game_loss.png)
+![play again](./play_again.png)
 <hr>
 
 
