@@ -1,7 +1,7 @@
 # Digital Design Worksheet 2
 
 
-### Implemented simple version of Minesweeper, using the console
+### Simple Minesweeper Game, using the console
 
 
 
@@ -9,7 +9,8 @@
 1. 6x6
 2. 8x8
 3. 10x10
-* The user then enters the number of the row, then column, then 'F' or 'O' to either flag or open the cell as shown in the screenshot below
+* The number of bombs is calculated depending on the size, the formula is (size^2)*0.2, e.g: (6^2) * 0.2 = 7.2 (rounded to the nearest integer = 7).
+* The user then enters the number of the row, then column, then 'F' or 'O' to either flag or open the cell as shown in the screenshot below.
 * Per Minesweeper rules, the cell selected by the user will display the amount of mines in a 1-cell proximity around it in all directions (in this case 1).
 
 ![first_prompt](./user_prompt.png)
@@ -36,6 +37,8 @@ class Input(ABC):
 <hr>
 
 ###### In the instace where the user wanted to flag a certain cell, an 'F' will be in place of the X on the board as shown below
+
+* There is a score tracker, that increments your score by 10 each time the user opens a cell that is not a mine, the score is printed with the board every time a cell is opened.
 
 ![flag](./flag.png)
 <hr>
