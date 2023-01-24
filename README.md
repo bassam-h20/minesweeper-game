@@ -11,7 +11,19 @@
 3. 10x10
 * The user then enters the number of the row, then column, then 'F' or 'O' to either flag or open the cell as shown in the screenshot below
 * Per Minesweeper rules, the cell selected by the user will display the amount of mines in a 1-cell proximity around it (in this case 1).
+
 ![first_prompt](./user_prompt.png)
+
+###### As one of the main classes, the following 'Input' abstract class has been implemented to read input from the user
+
+```
+class Input(ABC):
+    @abstractmethod
+    def read(self):
+        pass
+```
+###### In the case
+
 
 
 
